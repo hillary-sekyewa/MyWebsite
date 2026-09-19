@@ -1,0 +1,241 @@
+nav {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+  padding: 8px 12px;
+border-radius: 5px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+.menu a:hover {
+    background-color: #333;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  background-color: #f5f5f5f5;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+    color: darkblue;
+    font-size: 40px;
+  text-shadow: 1px 1px 3px #ccc;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+  line-height: 1.6;
+}
+
+button {
+    background-color: darkblue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+#hobbyList {
+    list-style-position: inside;
+    padding: 0;
+}
+#hobbyList li {
+    margin: 8px 0;
+    font-size: 20px;
+}
+#addHobbyBtn:disabled {
+    background-color: grey;
+    color: white;
+    cursor: not-allowed;
+}
+#addHobbyBtn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+  font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px #ccc;
+}
+#addHobbyBtn:hover {
+    background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px #bbb;
+}
+#addHobbyBtn:disabled {
+    background-color: grey;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+#addHobbyBtn {
+    display: block;
+    margin: 20px auto;
+}
+#hobbyList {
+    list-style-position: inside;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    margin: 20px 0;
+    border: 2px solid #ddd;
+}
+#hobbyList li {
+    background-color: white;
+    padding: 10px;
+    margin: 12px 0;
+    border-radius: 6px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 5px #eee;
+  transition: 0.3s;
+}
+#hobbyList {
+    border: 2px solid #ddd;
+}
+#hobbyTitle {
+    text-align: center;
+    font-size: 28px;
+    margin: 25px 0 15px;
+  color: #333;
+}
+#hobbyList li:hover {
+    background-color: #f5f5f5;
+    transform: translateX(5px);
+    transition: 0.3s;
+}
+#hobbyList {
+    box-shadow: 0 6px 15px #bbb;
+}
+#addHobbyBtn:active {
+    transform: translateY(2px);
+}
+ul {
+    list-style-position: inside;
+    padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+ul li {
+    margin: 10px 0;
+    font-size: 18px;
+  background-color: white;
+padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #eee;
+    transition: 0.3s;
+}
+ul li:hover {
+    background-color: #f2f2f2;
+    transform: translateX(5px);
+  box-shadow: 0 4px 8px #ddd;
+}
+#skillsTitle {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin: 25px 0 15px;
+}
+ul {
+    box-shadow: 0 10px 10px #a1a2;
+}
+.about-divider {
+    text-align: center;
+    font-size: 40px;
+    color: #9b59b6;
+    margin: 25px 0;
+  animation: heartbeat 1.5s infinite;
+}
+form input,
+form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+form textarea {
+    min-height: 120px;
+}
+form button {
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+  transition: 0.3s;
+}
+form input:focus,
+form textarea:focus {
+    border-color: #9b59b6;
+    outline: none;
+}
+form {
+    background-color: #f2f2f2;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #ddd;
+    max-width: 550px;
+    margin: 30px auto;
+}
+.home-btn {
+    display: inline-block;
+    background-color: #9b59b6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.home-btn:hover {
+    background-color: #7d3c98;
+    transform: translateY(-2px);
+}
